@@ -5,7 +5,7 @@ import TextField from '@mui/material/TextField';
 //
 import ComponentBlock from '../../component-block';
 
-// ----------------------------------------------------------------------
+// -------------------------------------------  ---------------------------
 
 export default function ReimbursementTextfield({ variant }) {
 

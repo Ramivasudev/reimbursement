@@ -27,11 +27,11 @@ export default function AddTripView() {
 
   return (
     <Container maxWidth={settings.themeStretch ? false : 'xl'}>
-      <Typography variant="h4" textAlign="center"> Add Your Trip Here </Typography>
+      <Typography variant="h4"> Add Your Trip Here </Typography>
 
       <Box
         sx={{
-          mt: 5,
+          mt: 2,
           width: 1,
           borderRadius: 2,
           bgcolor: (theme) => alpha(theme.palette.grey[500], 0.04),
