@@ -17,28 +17,26 @@ export default function ContactUsView() {
 
   return (
     <Container maxWidth={settings.themeStretch ? false : 'xl'}>
-      <Typography variant="h4"> Contact Us </Typography>
+      <Typography variant="h4" sx={{ mb: 2 }}>Contact Us</Typography>
       <Box
         sx={{
-          mt: 2,
           width: 1,
           height: 1,
           borderRadius: 2,
           bgcolor: (theme) => alpha(theme.palette.grey[500], 0.04),
           border: (theme) => `dashed 1px ${theme.palette.divider}`,
+          padding: 2,
         }}
       >
-        <Grid container spacing={2}>
-          <Grid item xs={6} md={8}>
+        <Grid container spacing={-1}> 
+          <Grid item xs={12} md={8}> 
             <ContactusTextfieldPage />
           </Grid>
-          <Grid item  xs={6} md={4}>
+          <Grid item xs={6} md={4}> 
             <Map />
           </Grid>
         </Grid>
       </Box>
-
-
     </Container>
   );
 }
